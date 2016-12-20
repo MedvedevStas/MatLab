@@ -9,8 +9,6 @@ Xo = Xo';
 A = inv(A);
 [f1(Xv(1),Xv(2)),f2(Xv(1),Xv(2))]';
 norm = sqrt(sqrt(sum(Xo.^2)));
-%херня
-
 while norm > e
     for(i=1:2)
         Xv = Xo -A*[f1(Xv(1),Xv(2)),f2(Xv(1),Xv(2))]';
